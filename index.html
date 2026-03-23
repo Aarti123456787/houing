@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="script.js">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" aria-label="Housing home">
+            <img src="img/logo.webp" alt="Housing logo" class="header-logo">
+        </a>
+
+        <nav class="nav">
+            <a href="#about" class="nav-links">About</a>
+            <a href="#properties" class="nav-links">Properties</a>
+            <a href="#testimonial" class="nav-links">Clients</a>
+            <a href="#contact" class="nav-links">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section hero" id="about">
+            <div class="hero-container">
+                <h1 class="primary-heading">Find your Dream Home!</h1>
+
+                <p class="hero-description">
+                    Welcome to Housing.com mini project. We help customers find the best lands, plots, villas, and dream homes at affordable prices with trusted service and smooth property dealing.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#properties" class="btn btn-properties">View Properties</a>
+                    <a href="#contact" class="btn btn-contact">Contact Us →</a>
+                </div>
+
+                <p class="hero-prices">Price Starts at</p>
+                <h3 class="hero-price">₹25,00,000+</h3>
+            </div>
+
+            <div class="hero-img-container">
+                <img src="img/houses/hero.webp" alt="Dream home exterior" class="hero-img">
+            </div>
+        </section>
+
+        <section class="section" id="properties">
+            <h2 class="secondary-heading">Our Featured Lands & Properties</h2>
+
+            <div class="properties-set">
+
+                <div class="properties-card">
+                    <img src="img/houses/delux.webp" alt="Deluxe home" class="properties-img">
+                    <div class="properties-container">
+                        <h3 class="ternary-heading">Premium Land Plot</h3>
+                        <p class="property-desc">A spacious land plot in a fast-growing location, ideal for residential construction.</p>
+                        <h3 class="hero-price properties-price">₹18,00,000</h3>
+                        <div class="properties-list-links">
+                            <button class="btn properties-link" onclick="viewDetails('Premium Land Plot', '₹18,00,000')">View Details</button>
+                            <button type="button" onclick="sharePage()" class="btn properties-link" aria-label="Share this page">
+                                <ion-icon name="share-social-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="properties-card">
+                    <img src="img/houses/hero.webp" alt="Modern villa" class="properties-img">
+                    <div class="properties-container">
+                        <h3 class="ternary-heading">Green Valley Land</h3>
+                        <p class="property-desc">Beautiful land surrounded by greenery with road access and water facility.</p>
+                        <h3 class="hero-price properties-price">₹22,00,000</h3>
+                        <div class="properties-list-links">
+                            <button class="btn properties-link" onclick="viewDetails('Green Valley Land', '₹22,00,000')">View Details</button>
+                            <button type="button" onclick="sharePage()" class="btn properties-link" aria-label="Share this page">
+                                <ion-icon name="share-social-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="properties-card">
+                    <img src="img/houses/delux.webp" alt="Luxury plot" class="properties-img">
+                    <div class="properties-container">
+                        <h3 class="ternary-heading">City Side Plot</h3>
+                        <p class="property-desc">Located near the city center, perfect for investment and future development.</p>
+                        <h3 class="hero-price properties-price">₹30,00,000</h3>
+                        <div class="properties-list-links">
+                            <button class="btn properties-link" onclick="viewDetails('City Side Plot', '₹30,00,000')">View Details</button>
+                            <button type="button" onclick="sharePage()" class="btn properties-link" aria-label="Share this page">
+                                <ion-icon name="share-social-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="properties-card">
+                    <img src="img/houses/hero.webp" alt="Farm land" class="properties-img">
+                    <div class="properties-container">
+                        <h3 class="ternary-heading">Farm House Land</h3>
+                        <p class="property-desc">A peaceful farmhouse plot suitable for weekend home or farming activities.</p>
+                        <h3 class="hero-price properties-price">₹26,50,000</h3>
+                        <div class="properties-list-links">
+                            <button class="btn properties-link" onclick="viewDetails('Farm House Land', '₹26,50,000')">View Details</button>
+                            <button type="button" onclick="sharePage()" class="btn properties-link" aria-label="Share this page">
+                                <ion-icon name="share-social-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="properties-card">
+                    <img src="img/houses/delux.webp" alt="Residential plot" class="properties-img">
+                    <div class="properties-container">
+                        <h3 class="ternary-heading">Sunrise Residency Plot</h3>
+                        <p class="property-desc">Residential land with electricity, nearby market, and school connectivity.</p>
+                        <h3 class="hero-price properties-price">₹24,00,000</h3>
+                        <div class="properties-list-links">
+                            <button class="btn properties-link" onclick="viewDetails('Sunrise Residency Plot', '₹24,00,000')">View Details</button>
+                            <button type="button" onclick="sharePage()" class="btn properties-link" aria-label="Share this page">
+                                <ion-icon name="share-social-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="properties-card">
+                    <img src="img/houses/hero.webp" alt="Investment plot" class="properties-img">
+                    <div class="properties-container">
+                        <h3 class="ternary-heading">Golden Investment Land</h3>
+                        <p class="property-desc">A high-potential investment land parcel in a developing real estate area.</p>
+                        <h3 class="hero-price properties-price">₹35,00,000</h3>
+                        <div class="properties-list-links">
+                            <button class="btn properties-link" onclick="viewDetails('Golden Investment Land', '₹35,00,000')">View Details</button>
+                            <button type="button" onclick="sharePage()" class="btn properties-link" aria-label="Share this page">
+                                <ion-icon name="share-social-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section" id="testimonial">
+            <h2 class="secondary-heading">Our Happy Clients</h2>
+
+            <div class="testimonial-box">
+                <p>“Very smooth experience. I found a perfect plot within my budget.”</p>
+                <p><strong>— Anjali Sharma</strong></p>
+            </div>
+
+            <div class="testimonial-box">
+                <p>“Excellent support and genuine property options. Highly recommended.”</p>
+                <p><strong>— Rahul Verma</strong></p>
+            </div>
+
+            <div class="testimonial-box">
+                <p>“The team guided us properly and helped us buy land easily.”</p>
+                <p><strong>— Sneha Patil</strong></p>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2 class="secondary-heading contact-heading">Contact Information</h2>
+
+            <div class="contact-container">
+                <div class="contact-box">
+                    <label class="contact-label">Made By</label>
+                    <input type="text" class="contact-input" value="Aarti Jadhav" readonly>
+                </div>
+
+                <div class="contact-box">
+                    <label class="contact-label">Email Address</label>
+                    <input type="text" class="contact-input" value="aartijadhav8055@gmail.com" readonly>
+                </div>
+
+                <div class="contact-box">
+                    <label class="contact-label">Contact Number</label>
+                    <input type="text" class="contact-input" value="8690030101" readonly>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">© 2026 - All rights reserved by Housing.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
